@@ -120,7 +120,7 @@ class IdGenerator
         $idLength = $length - $prefixLength;
         $whereString = '';
 
-        if (array_key_exists('where', $configArr)) {
+        if (array_key_exists('where', $configArr) && is_array($configArr['where']) && count($configArr['where'])) {
             $whereString .= " WHERE ";
             foreach ($configArr['where'] as $row) {
                 $key = $row[0];
