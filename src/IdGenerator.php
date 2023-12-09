@@ -127,7 +127,7 @@ class IdGenerator
                 $operator = count($row) == 3 ? $row[1] : '=';
                 $value = count($row) == 3 ? $row[2] : $row[1];
                 $value = is_string($value) ? "'$value'" : $value;
-                $whereString .= $key . $operator . $value . " AND ";
+                $whereString .= "$key $operator $value AND ";
             }
         }
         $whereString = rtrim($whereString, 'AND ');
