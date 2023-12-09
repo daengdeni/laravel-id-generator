@@ -1,6 +1,6 @@
 <?php namespace Haruncpi\LaravelIdGenerator\Tests\Unit;
 
-use Haruncpi\LaravelIdGenerator\IdGenerator;
+use cbagdawala\LaravelIdGenerator\IdGenerator;
 use Illuminate\Support\Facades\DB;
 use Tests\TestCase;
 
