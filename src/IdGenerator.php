@@ -1,4 +1,4 @@
-<?php namespace Haruncpi\LaravelIdGenerator;
+<?php namespace Cbagdawala\LaravelIdGenerator;
 
 use Illuminate\Support\Facades\DB;
 use Exception;
