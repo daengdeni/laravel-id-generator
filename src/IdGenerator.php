@@ -91,7 +91,7 @@ class IdGenerator
             if (is_string($configArr['where'])) {
                 throw new Exception('where clause must be an array, you provided string');
             }
-            if (!count($configArr['where'])) {
+            if (is_array($configArr['where']) && !count($configArr['where'])) {
                 throw new Exception('where clause must need at least an array');
             }
         }
