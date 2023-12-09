@@ -123,7 +123,11 @@ class IdGenerator
         if (array_key_exists('where', $configArr)) {
             $whereString .= " WHERE ";
             foreach ($configArr['where'] as $row) {
-                $whereString .= $row[0] . "=" . $row[1] . " AND ";
+                $key = $row[0];
+                $operator = count($row) == 3 ? $row[1] : '=';
+                $value = count($row) == 3 ? $row[2] : $row[1];
+                $value = is_string($value) ? "'$value'" : $value;
+                $whereString .= $key . $operator . $value . " AND ";
             }
         }
         $whereString = rtrim($whereString, 'AND ');
