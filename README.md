@@ -11,7 +11,7 @@
 ![Image description](preview.png)
 
 ## Support
-<a href="https://www.buymeacoffee.com/haruncpi" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="width: 160px !important;" ></a>
+<a href="https://www.buymeacoffee.com/cbagdawala" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="width: 160px !important;" ></a>
 
 ## Documentation
 Get documentation on [laravelarticle.com](https://laravelarticle.com/laravel-custom-id-generator)
