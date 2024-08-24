@@ -1,4 +1,4 @@
-<?php namespace cbagdawala\LaravelIdGenerator;
+<?php namespace daengdeni\LaravelIdGenerator;
 
 use Illuminate\Support\ServiceProvider;
 
