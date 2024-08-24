@@ -1,6 +1,6 @@
-<?php namespace cbagdawala\LaravelIdGenerator\Traits;
+<?php namespace daengdeni\LaravelIdGenerator\Traits;
 
-use cbagdawala\LaravelIdGenerator\IdGenerator;
+use daengdeni\LaravelIdGenerator\IdGenerator;
 
 /**
  * Trait IdFactory
