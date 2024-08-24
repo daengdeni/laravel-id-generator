@@ -26,10 +26,19 @@ class IdGenerator
         $driver = DB::connection($connection)->getDriverName();
         $database = DB::connection($connection)->getDatabaseName();
 
+        $config = [
+            'database' => $database,
+            'table' => $table
+        ];
+        
         if ($driver == 'mysql') {
             $sql = 'SELECT column_name AS "column_name",data_type AS "data_type",column_type AS "column_type" ';
             $sql .= 'FROM information_schema.columns ';
             $sql .= 'WHERE table_schema=:database AND table_name=:table';
+        } elseif($driver=='sqlite'){
+            unset($config['database']);
+            $sql = 'SELECT name AS "column_name",type AS "data_type"';
+            $sql .= 'FROM pragma_table_info(:table)';
         } else {
             // column_type not available in postgres SQL
             // table_catalog is database in postgres
@@ -37,7 +46,7 @@ class IdGenerator
             $sql .= 'WHERE table_catalog=:database AND table_name=:table';
         }
 
-        $rows = DB::select($sql, ['database' => $database, 'table' => $table]);
+        $rows = DB::select($sql, $config);
         $fieldType = null;
         $fieldLength = 20;
 
