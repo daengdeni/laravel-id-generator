@@ -1,11 +1,11 @@
 {
-    "name": "cbagdawala/laravel-id-generator",
+    "name": "daengdeni/laravel-id-generator",
     "description": "Easy way to generate custom ID in laravel framework",
     "license": "MIT",
     "authors": [
         {
-            "name": "Chintan Bagdawala",
-            "email": "chintan@bagdawala.com"
+            "name": "Daeng Deni Mardaeni",
+            "email": "ddeni05@gmail.com"
         }
     ],
     "minimum-stability": "dev",
@@ -15,13 +15,13 @@
     },
     "autoload": {
         "psr-4": {
-            "cbagdawala\\LaravelIdGenerator\\": "src/"
+            "daengdeni\\LaravelIdGenerator\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "cbagdawala\\LaravelIdGenerator\\IdGeneratorServiceProvider"
+                "daengdeni\\LaravelIdGenerator\\IdGeneratorServiceProvider"
             ]
         }
     }
