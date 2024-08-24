@@ -16,6 +16,6 @@ class IdGeneratorServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->make('cbagdawala\LaravelIdGenerator\IdGenerator');
+        $this->app->make('daengdeni\LaravelIdGenerator\IdGenerator');
     }
 }

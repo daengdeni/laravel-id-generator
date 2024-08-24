@@ -1,4 +1,4 @@
-<?php namespace Haruncpi\LaravelIdGenerator\Tests\Unit;
+<?php namespace daengdeni\LaravelIdGenerator\Tests\Unit;
 
 use cbagdawala\LaravelIdGenerator\IdGenerator;
 use Illuminate\Support\Facades\DB;
